@@ -14,7 +14,7 @@ services:
       - ./:/var/www
     ports:
       - "8083:8080"
-      - '${VITE_PORT:-5176}:${VITE_PORT:-5173}'
+      - '5176:5176'
     depends_on:
       database3:
         condition: service_healthy
